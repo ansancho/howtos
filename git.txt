@@ -1,0 +1,13 @@
+** Create repository and clone it on GitHUB **
+----------------------------------------------
+- Create repository on remote server
+ mkdir /data/repo/name.repo.git
+ cd /data/repo/name.repo.git
+ git init --bare
+- Clone it on the local computer
+ git clone git:/data/repo/name.repo.git
+- Create a repository with same same name in GitHub
+- Add github remote in local repository
+ git remote add origin github.com:username/name.repo.git
+- Add github repository to the list of push repositories. 
+ git push -u github master
