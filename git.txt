@@ -11,3 +11,7 @@
  git remote add origin github.com:username/name.repo.git
 - Add github repository to the list of push repositories. 
  git push -u github master
+- Once we want to push we will have to write two commmands
+  one per remote
+ git push origin
+ git push github
