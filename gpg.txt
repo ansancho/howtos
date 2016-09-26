@@ -1,0 +1,21 @@
+1-New key pair.
+---------------
+It is better to use gpg2 rather than gpg, for example
+Enigmail works better with this version.
+
+gpg2 --list-keys
+gpg2 --gen-key
+
+Let's do a backup
+
+gpg2 --armor --export > public-key.asc
+gpg2 --armor --export-secret-keys > private-key.asc
+
+If we want to import it later:
+
+gpg2 --import public-key.asc
+gpg2 --import private-key.asc
+
+
+In order to import private keys succesfully, 
+.gnupg/private-keys-v1.d must exist.
