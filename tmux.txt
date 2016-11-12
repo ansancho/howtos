@@ -4,7 +4,7 @@ TMUX Terminal multiplexer
 * Sessions (session: collection of windows running)
 
 - Creating a session -> tmux new-session -s work 
-- Attach -> tmux attach -t work (attach to a previously created session)
+- Attach -> tmux attach -t work (attach to a presviously created session)
 - Detach -> C-b d 
 - Choose a session from a list -> C-b s
 
@@ -30,3 +30,4 @@ TMUX Terminal multiplexer
 *Scroll
 
 - scroll mode -> C-a b <page_up> to enter then press {avpag,repag,up,down..} to move and end with 'q'
+
