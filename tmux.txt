@@ -1,6 +1,32 @@
-Creating a session -> tmux new-session -s work
-Attach -> tmux attach -t work
-Detach -> C-b d
-Choose a session from a list -> C-b s
-Choose window from a list -> C-b w
- 
+TMUX Terminal multiplexer
+--------
+
+* Sessions (session: collection of windows running)
+
+- Creating a session -> tmux new-session -s work 
+- Attach -> tmux attach -t work (attach to a previously created session)
+- Detach -> C-b d 
+- Choose a session from a list -> C-b s
+
+* Windows (collection of panes)
+
+- Choose window from a list -> C-b w
+- Change to 0..9 window -> C-b 0...9
+- Next window C-b n
+- Rename window: C-b ,
+- Kill Window: C-b &
+
+* Panes (rectangular part of a window that runs usually a shell)
+
+- Split pane  horizontally -> C-b "
+- Split pane vertically -> C-b %
+- Go to left -> C-b left
+- Go to right -> C-b right
+- Go to up -> C-b up
+- Go to down -> C-b down
+- Go next pane -> C-b o
+- Resize -> C-b M-{up,down,right,left} (M: ALT)
+
+*Scroll
+
+- scroll mode -> C-a b <page_up> to enter then press {avpag,repag,up,down..} to move and end with 'q'
